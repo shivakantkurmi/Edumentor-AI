@@ -2,7 +2,7 @@
 
 EduMentor AI is a generative AI-powered learning assistant built with the Gemini 1.5 Flash API. It creates personalized study plans, explains concepts, and generates quizzes based on user inputs like topic, difficulty, and learning style, using prompt engineering, Retrieval-Augmented Generation (RAG), and a Gradio interface.
 
-This repository contains the notebook (`edumentor-ai.ipynb`) and is also available on Kaggle: [Kaggle Notebook Link](https://www.kaggle.com/code/shivakantkurmi/edumentor-ai) .
+This repository contains the notebook (`edumentor-ai.ipynb`) and is also available on Kaggle: [Kaggle Notebook](https://www.kaggle.com/code/shivakantkurmi/edumentor-ai).
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
 ### Option 1: Run on Kaggle
 
 1. **Fork the Notebook**:
-   - Visit the Kaggle notebook: [Kaggle Notebook Link](https://www.kaggle.com/code/shivakantkurmi/edumentor-ai).
+   - Visit the Kaggle notebook: [Kaggle Notebook](https://www.kaggle.com/code/shivakantkurmi/edumentor-ai).
    - Click **"Copy & Edit"** to create your own editable version in your Kaggle account.
 
 2. **Add Your API Key to Kaggle Secrets**:
@@ -37,12 +37,31 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/shivakantkurmi/Edumentor-AI.git
+   cd Edumentor-AI
    ```
 
+2. **Install Dependencies**:
+   Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   The `requirements.txt` includes:
+   ```
+   google-generativeai
+   langchain
+   langchain-community
+   langchain-huggingface
+   faiss-cpu
+   gradio
+   pandas
+   seaborn
+   jupyter
+   python-dotenv
+   kaggle
+   ```
 
-2. **Add Your API Key**:
+3. **Add Your API Key**:
    Obtain a Google API key from [Google AI Studio](https://aistudio.google.com/) and set it using one of these methods:
 
    **Method 1: Environment Variable**  
@@ -63,9 +82,9 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
      ```
    - The notebook loads this using `python-dotenv`. Ensure `.env` is in `.gitignore`.
 
-3. **Run the Notebook**:
+4. **Run the Notebook**:
    ```bash
-   jupyter notebook edumentor-ai-gen-ai-course-capstone-project.ipynb
+   jupyter notebook edumentor-ai.ipynb
    ```
    Execute the cells to generate study plans, explanations, or quizzes.
 
@@ -76,7 +95,7 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
 - **Kaggle Secrets**: Confirm the secret is enabled in the notebook’s settings.
 - **Clear Outputs**: For local use, clear outputs if errors occur:
   ```bash
-  jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace edumentor-ai-gen-ai-course-capstone-project.ipynb
+  jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace edumentor-ai.ipynb
   ```
 
 ## Notes
@@ -87,7 +106,7 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
 
 ## License
 
-[MIT License]
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
