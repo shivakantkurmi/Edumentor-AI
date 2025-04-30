@@ -41,27 +41,8 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
    cd your-repo
    ```
 
-2. **Install Dependencies**:
-   Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   The `requirements.txt` includes:
-   ```
-   google-generativeai
-   langchain
-   langchain-community
-   langchain-huggingface
-   faiss-cpu
-   gradio
-   pandas
-   seaborn
-   jupyter
-   python-dotenv
-   kaggle
-   ```
 
-3. **Add Your API Key**:
+2. **Add Your API Key**:
    Obtain a Google API key from [Google AI Studio](https://aistudio.google.com/) and set it using one of these methods:
 
    **Method 1: Environment Variable**  
@@ -82,7 +63,7 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
      ```
    - The notebook loads this using `python-dotenv`. Ensure `.env` is in `.gitignore`.
 
-4. **Run the Notebook**:
+3. **Run the Notebook**:
    ```bash
    jupyter notebook edumentor-ai-gen-ai-course-capstone-project.ipynb
    ```
