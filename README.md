@@ -100,7 +100,6 @@ Run the notebook on **Kaggle** (recommended for simplicity) or **locally**. Foll
 
 ## Notes
 
-- Your Google API key is private and should not be shared or committed to the repository.
 - On Kaggle, fork the notebook and add your own `GOOGLE_API_KEY` to Kaggle Secrets.
 - Locally, use a `.env` file or environment variable to securely manage your API key.
 
